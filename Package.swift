@@ -16,21 +16,18 @@ let package = Package(
     targets: [
         .target(
             name: "AFNetworking",
-            path: ".",
-            exclude:[
-                "Example",
-                "Tests"
-            ],
+            path: "AFNetworking",
+ 
             sources: [
-                "AFNetworking",
-                "UIKit+AFNetworking"
+                "*.m",
+                //"UIKit+AFNetworking"
             ],
             resources: [],
             
-            publicHeadersPath: "AFNetworking",
+            publicHeadersPath: ".",
             cSettings: [
-                .headerSearchPath("AFNetworking"),
-                .headerSearchPath("UIKit+AFNetworking")
+                .headerSearchPath("."),
+                //.headerSearchPath("UIKit+AFNetworking")
             ],
             linkerSettings: [
                 .linkedFramework("MobileCoreServices", .when(platforms: [.iOS])),
