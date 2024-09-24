@@ -20,6 +20,7 @@ let package = Package(
                 "AFNetworking",
                 "UIKit+AFNetworking"
             ],
+            resources: [],
             publicHeadersPath: "AFNetworking",
             cSettings: [
                 .headerSearchPath("AFNetworking"),
@@ -28,7 +29,7 @@ let package = Package(
             linkerSettings: [
                 .linkedFramework("MobileCoreServices", .when(platforms: [.iOS])),
                 .linkedFramework("CoreGraphics", .when(platforms: [.iOS])),
-                .linkedFramework("CoreServices", .when(platforms: [.macOS])),
+                //.linkedFramework("CoreServices", .when(platforms: [.macOS])),
                 .linkedFramework("Security"),
                 .linkedFramework("SystemConfiguration"),
                 .linkedFramework("UIKit", .when(platforms: [.iOS]))
