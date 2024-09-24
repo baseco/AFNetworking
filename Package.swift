@@ -3,9 +3,8 @@ import PackageDescription
 
 let package = Package(
     name: "AFNetworking",
-    platform: [
-        .iOS(.v6),
-        .macOS(.v10_8)
+    platforms: [
+        .iOS(.v9)
     ],
     products: [
         .library(
