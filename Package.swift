@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "AFNetworking",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v9)
     ],
