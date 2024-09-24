@@ -17,15 +17,16 @@ let package = Package(
         .target(
             name: "AFNetworking",
             path: ".",
+            exclude:[
+                "Example",
+                "Tests"
+            ],
             sources: [
                 "AFNetworking",
                 "UIKit+AFNetworking"
             ],
             resources: [],
-            exclude:[
-                "Example",
-                "Tests"
-            ]
+            
             publicHeadersPath: "AFNetworking",
             cSettings: [
                 .headerSearchPath("AFNetworking"),
