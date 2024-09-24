@@ -22,6 +22,10 @@ let package = Package(
                 "UIKit+AFNetworking"
             ],
             resources: [],
+            exclude:[
+                "Example",
+                "Tests"
+            ]
             publicHeadersPath: "AFNetworking",
             cSettings: [
                 .headerSearchPath("AFNetworking"),
