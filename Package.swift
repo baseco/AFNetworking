@@ -18,11 +18,6 @@ let package = Package(
             name: "AFNetworking",
             path: "AFNetworking",
  
-            sources: [
-                "*.m",
-                //"UIKit+AFNetworking"
-            ],
-            resources: [],
             
             publicHeadersPath: ".",
             cSettings: [
