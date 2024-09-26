@@ -1,11 +1,11 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
     name: "AFNetworking",
     defaultLocalization: "en",
     platforms: [
-        .iOS(.v9)
+        .iOS(.v13)
     ],
     products: [
         .library(
@@ -41,7 +41,7 @@ let package = Package(
             ],
             resources: [],
             
-            publicHeadersPath: ".",
+            publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("."),
                 //.headerSearchPath("UIKit+AFNetworking")
